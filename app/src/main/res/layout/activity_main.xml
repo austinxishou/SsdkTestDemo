@@ -65,6 +65,12 @@
                 style="@style/MenuText"
                 android:drawableLeft="@drawable/circle"
                 android:text="@string/ssdk_device_control_test_title" />
+
+            <TextView
+                android:id="@+id/ssdk_sdcard_usb_systemfile_test"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="@string/ssdk_sdcard_usb_systemfile_test_title" />
             <!-- 这里是 SideBar 的子视图-->
 
         </com.github.mzule.fantasyslide.SideBar>

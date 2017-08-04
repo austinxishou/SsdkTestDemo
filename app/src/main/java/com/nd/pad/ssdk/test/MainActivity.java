@@ -15,6 +15,7 @@ import com.github.mzule.fantasyslide.SideBar;
 import com.nd.pad.ssdk.test.fragment.AboutMeFragment;
 import com.nd.pad.ssdk.test.fragment.DeviceControlFragment;
 import com.nd.pad.ssdk.test.fragment.ForbidManagerFragment;
+import com.nd.pad.ssdk.test.fragment.SdcardUsbSystemFileFragment;
 import com.nd.pad.ssdk.test.fragment.WifiTestFragment;
 import com.nd.romssdk.core.SystemUtil;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements FantasyListener {
     private WifiTestFragment mWifiTestFragment;
     private ForbidManagerFragment mForbidManagerFragment;
     private DeviceControlFragment mDeviceControlFragment;
+    private SdcardUsbSystemFileFragment mSdcardUsbSystemFileFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +105,12 @@ public class MainActivity extends AppCompatActivity implements FantasyListener {
                     mDeviceControlFragment = new DeviceControlFragment();
                 }
                 changeFragment(mDeviceControlFragment);
+                break;
+            case R.id.ssdk_sdcard_usb_systemfile_test:
+                if (mSdcardUsbSystemFileFragment == null) {
+                    mSdcardUsbSystemFileFragment = new SdcardUsbSystemFileFragment();
+                }
+                changeFragment(mSdcardUsbSystemFileFragment);
                 break;
             default:
                 break;

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sdcard_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sdcard_test_doc" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sdcard_enable_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sdcard_enable"/>
+
+            <Button
+                android:id="@+id/sdcard_disable_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sdcard_disable"/>
+
+            <Button
+                android:id="@+id/sdcard_get_status_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sdcard_get_status"/>
+
+            <TextView
+                android:id="@+id/sdcard_status_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sdcard_status" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/usb_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usb_test_doc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/usb_enable_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/usb_enable"/>
+
+            <Button
+                android:id="@+id/usb_disable_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/usb_disable"/>
+
+            <Button
+                android:id="@+id/usb_get_status_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/usb_get_status"/>
+
+            <TextView
+                android:id="@+id/usb_status_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/usb_status" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--System file-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/systemfile_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/systemfile_test_doc" />
+        <!--创建目录-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/systemfile_mkdir_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_mkdir_pop" />
+            <Button
+                android:id="@+id/systemfile_mkdir_btn"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="@string/systemfile_mkdir"/>
+
+        </LinearLayout>
+
+        <!--删除目录-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/systemfile_rmdir_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_rmdir_pop" />
+            <Button
+                android:id="@+id/systemfile_rmdir_btn"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="@string/systemfile_rmdir"/>
+
+        </LinearLayout>
+
+        <!--设置权限-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <EditText
+            android:id="@+id/systemfile_set_permisson_path_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/systemfile_set_permisson_path_pop" />
+            <EditText
+                android:id="@+id/systemfile_set_permisson_mod_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_set_permisson_mod_pop" />
+            <EditText
+                android:id="@+id/systemfile_set_permisson_uid_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_set_permisson_uid_pop" />
+            <EditText
+                android:id="@+id/systemfile_set_permisson_gid_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_set_permisson_gid_pop" />
+            <Button
+                android:id="@+id/systemfile_set_permisson_btn"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="@string/systemfile_set_permisson"/>
+
+        </LinearLayout>
+
+        <!--拷贝文件-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/systemfile_copy_src_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_copy_src_pop" />
+            <EditText
+                android:id="@+id/systemfile_copy_dest_edt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/systemfile_copy_dest_pop" />
+            <Button
+                android:id="@+id/systemfile_copy_file_btn"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="@string/systemfile_copy_file"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

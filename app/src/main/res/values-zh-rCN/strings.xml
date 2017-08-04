@@ -6,7 +6,7 @@
     <string name="ssdk_forbid_manager_test_title">blackWhiteList测试</string>
 
     <string name="ssdk_device_control_test_title">deviceControl测试</string>
-
+    <string name="ssdk_sdcard_usb_systemfile_test_title">SDCARD-USB-系统文件测试</string>
     <string name="author">檀东利-Danny</string>
 
     <string name="wifi_sleep_policy_mode">wifi休眠策略</string>
@@ -59,4 +59,49 @@
 
     <string name="device_check_update">检查更新（logcat显示）</string>
     <string name="device_system_update">OTA更新</string>
+
+    <string name="sdcard_test_doc">"Sdcard ssdk 功能测试说明:
+        1. 使能sdcard功能: 使能后外置sdcard正常使用;
+        2. 禁止sdcard功能:禁止后外置sdcard被卸载,而且不能通过插拔和设置中开启外置sdcard功能;
+        3. 查询sdcard状态:获取sdcard使能或者是禁用的状态"</string>
+
+    <string name="usb_test_doc">"Usb ssdk 功能测试说明:
+        1. 使能usb功能: 使能后usb正常使用;
+        2. 禁止usb功能:禁止后usb仅有充电功能,而且不能通过设置选项打开;
+        3. 查询usb状态:获取usb使能或者是禁用的状态"</string>
+    <string name="systemfile_test_doc">"systemfile ssdk 功能测试说明:
+        1. 保存目录说明: 由于安全以及ota升级考虑,所有系统文件ssdk操作目录限定于/data/system/ndfile
+        2. 创建目录: 在上述目录中创建目录,名称不能包含中文以及非法字符;
+        3. 删除目录:在上述目录中删除目录
+        4. 修改文件权限:修改指定文件读写权限
+        5. 拷贝文件到系统文件夹目录: 拷贝文件"</string>
+
+    <string name="sdcard_enable">使能sdcard功能</string>
+    <string name="sdcard_disable">禁止sdcard功能</string>
+    <string name="sdcard_get_status">查询sdcard状态</string>
+    <string name="sdcard_status">显示当前sdcard状态</string>
+    <string name="usb_enable">使能usb功能</string>
+    <string name="usb_disable">禁止usb功能</string>
+    <string name="usb_get_status">查询usb状态</string>
+    <string name="usb_status">显示当前usb状态</string>
+
+    <string name="systemfile_mkdir_pop">请输入要创建的系统文件夹名称:不能包含中文和非法字符</string>
+    <string name="systemfile_mkdir">创建目录</string>
+
+    <string name="systemfile_rmdir_pop">请输入要删除的系统文件夹名称:不能包含中文和非法字符</string>
+    <string name="systemfile_rmdir">删除目录</string>
+
+    <string name="systemfile_set_permisson">设置权限</string>
+    <string name="systemfile_set_permisson_path_pop">请输入要设置权限的文件路径</string>
+    <string name="systemfile_set_permisson_mod_pop">请输入要设置的权限模式如:0644</string>
+    <string name="systemfile_set_permisson_uid_pop">请输入要设置用户ID,0为不设置</string>
+    <string name="systemfile_set_permisson_gid_pop">请输入要设置用户组ID,0为不设置</string>
+
+    <string name="systemfile_copy_src_pop">请输入要拷贝的目标文件路径</string>
+    <string name="systemfile_copy_dest_pop">请输入要拷贝的输出文件路径</string>
+    <string name="systemfile_copy_file">拷贝文件</string>
+
+
+
+
 </resources>
