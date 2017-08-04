@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">tdl_ndssdk_demo</string>
+
+    <string name="ssdk_wifi_test_title">wifi测试</string>
+
+    <string name="ssdk_forbid_manager_test_title">blackWhiteList测试</string>
+
+    <string name="ssdk_device_control_test_title">deviceControl测试</string>
+
+    <string name="author">檀东利-Danny</string>
+
+    <string name="wifi_sleep_policy_mode">wifi休眠策略</string>
+    <string-array name="wifi_sleep_policy_mode_array">
+        <item>永不</item>
+        <item>仅充电时</item>
+        <item>始终</item>
+    </string-array>
+
+    <string name="wifi_optimization">wifi优化</string>
+
+    <string name="wifi_instant_rate">wifi瞬时速率</string>
+    <string name="应用">应用程序</string>
+    <string name="wifi_up_download_rate">上传:%1$d 下载:%2$d</string>
+
+    <string name="forbid_checkout">查看</string>
+    <string name="forbid_register">注册</string>
+    <string name="forbid_unregister">反注册</string>
+    <string name="forbid_install_title">限制安装</string>
+    <string name="forbid_uninstall_title">限制卸载</string>
+    <string name="forbid_clean_title">限制清理</string>
+    <string name="forbid_run_title">限制运行</string>
+    <string name="forbid_visiable_title">隐藏</string>
+
+    <string name="device_reboot">系统重启</string>
+    <string name="device_shutdown">系统关机</string>
+    <string name="device_lock_screen">系统锁屏</string>
+    <string name="device_wake_up">系统唤醒</string>
+    <string name="device_wake_up_hint">秒后</string>
+
+    <string name="device_systime_year">年</string>
+    <string name="device_systime_month">月</string>
+    <string name="device_systime_day">日</string>
+    <string name="device_systime_hour_of_day">时</string>
+    <string name="device_systime_minute">分</string>
+    <string name="device_systime_second">秒</string>
+    <string name="device_set_systime">设置时间</string>
+
+    <string name="device_open_airplane_mode">打开飞行模式</string>
+    <string name="device_close_airplane_mode">关闭飞行模式</string>
+
+    <string name="device_open_development_settings">打开开发者选项</string>
+    <string name="device_close_development_settings">关闭开发者选项</string>
+
+    <string name="device_force_stop_package">强制停止</string>
+    <string name="device_uninstall_package">卸载</string>
+    <string name="device_enable_package">启用</string>
+    <string name="device_disenable_package">停用</string>
+    <string name="device_clean_package_data">清理数据</string>
+
+    <string name="device_check_update">检查更新（logcat显示）</string>
+    <string name="device_system_update">OTA更新</string>
+</resources>

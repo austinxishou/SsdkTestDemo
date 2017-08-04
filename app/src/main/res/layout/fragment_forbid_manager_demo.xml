@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_install_title"/>
+
+        <EditText
+            android:id="@+id/forbid_install_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/forbid_install_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_register"/>
+
+        <Button
+            android:id="@+id/forbid_install_unregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_unregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_checkout"/>
+
+        <Spinner
+            android:id="@+id/forbid_install_checkout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_item_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_uninstall_title"/>
+
+        <EditText
+            android:id="@+id/forbid_uninstall_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/forbid_uninstall_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_register"/>
+
+        <Button
+            android:id="@+id/forbid_uninstall_unregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_unregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_checkout"/>
+
+        <Spinner
+            android:id="@+id/forbid_uninstall_checkout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_item_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_clean_title"/>
+
+        <EditText
+            android:id="@+id/forbid_clean_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/forbid_clean_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_register"/>
+
+        <Button
+            android:id="@+id/forbid_clean_unregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_unregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_checkout"/>
+
+        <Spinner
+            android:id="@+id/forbid_clean_checkout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_item_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_run_title"/>
+
+        <EditText
+            android:id="@+id/forbid_run_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/forbid_run_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_register"/>
+
+        <Button
+            android:id="@+id/forbid_run_unregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_unregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_checkout"/>
+
+        <Spinner
+            android:id="@+id/forbid_run_checkout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_item_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_visiable_title"/>
+
+        <EditText
+            android:id="@+id/forbid_visiable_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/forbid_visiable_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_register"/>
+
+        <Button
+            android:id="@+id/forbid_visiable_unregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_unregister"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+            android:text="@string/forbid_checkout"/>
+
+        <Spinner
+            android:id="@+id/forbid_visiable_checkout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

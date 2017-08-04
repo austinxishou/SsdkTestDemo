@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nd.pad.ssdk.test.MainActivity">
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="false">
+
+        <FrameLayout
+            android:id="@+id/id_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:id="@+id/leftSideBar"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            app:maxTranslationX="66dp">
+
+            <LinearLayout
+                android:id="@+id/userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.nd.view.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/me"
+                    app:civ_border_color="@color/menu_text_color"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="@dimen/common_item_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ssdk_wifi_test"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="@string/ssdk_wifi_test_title" />
+
+            <TextView
+                android:id="@+id/ssdk_forbid_manager_test"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="@string/ssdk_forbid_manager_test_title" />
+
+            <TextView
+                android:id="@+id/ssdk_device_control_test"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="@string/ssdk_device_control_test_title" />
+            <!-- 这里是 SideBar 的子视图-->
+
+        </com.github.mzule.fantasyslide.SideBar>
+        <!-- 如果需要的话，可以添加右侧边栏-->
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+</RelativeLayout>

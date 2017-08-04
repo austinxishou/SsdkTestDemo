@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 第一行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                    android:text="@string/wifi_sleep_policy_mode"/>
+
+                <Spinner
+                    android:id="@+id/setNdWifiSleepPolicyMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/between_item_horizontal_margin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/wifi_optimization"/>
+
+                <ToggleButton
+                    android:id="@+id/setNdWifiOptimization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                    style="@style/TdlToggleButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 第二行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/between_item_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                android:text="@string/wifi_instant_rate"/>
+
+            <ToggleButton
+                android:id="@+id/setWifiInstantRateMonitorEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                style="@style/TdlToggleButton" />
+
+            <TextView
+                android:id="@+id/instant_rate"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/wifi_up_download_rate"/>
+        </LinearLayout>
+
+        <!-- 第三行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/between_item_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                android:text="@string/wifi_instant_rate"/>
+
+            <ToggleButton
+                android:id="@+id/setWifiAppRateMonitorEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                style="@style/TdlToggleButton" />
+
+            <Spinner
+                android:id="@+id/app_list"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/app_rate"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/between_item_horizontal_margin"
+                android:text="@string/wifi_up_download_rate"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/between_item_vertical_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/connect_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="connect"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

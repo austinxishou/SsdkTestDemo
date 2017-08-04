@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tdl_ndssdk_demo</string>
+
+    <string name="author">Danny</string>
+
+    <string name="wifi_sleep_policy_mode">wifi sleep policy</string>
+
+    <string name="device_secends_wake_up">5</string>
+</resources>
